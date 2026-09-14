@@ -49,4 +49,8 @@ If `Ready_Out` is LOW, the winning channel retains control of the output bus, an
 
 ## Output 
 ### Waveform
+<img width="935" height="303" alt="image" src="https://github.com/user-attachments/assets/4cdbaef8-f10b-4f86-8f2c-b09b854e4873" />
+
 ### Simulation Terminal
+<img width="389" height="170" alt="image" src="https://github.com/user-attachments/assets/c32abb75-ca06-4b23-aeb9-484f30b06822" />
+
