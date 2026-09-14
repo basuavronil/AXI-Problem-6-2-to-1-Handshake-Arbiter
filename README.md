@@ -47,6 +47,21 @@ $$\text{Handshake Complete} = \text{Valid}_{\text{Winner}} \text{ AND } \text{Re
 
 If `Ready_Out` is LOW, the winning channel retains control of the output bus, and its payload remains stable until the downstream receiver accepts the frame.
 
+## 📌 Top-Level Block Diagram
+
+```text
+           +-------------------------+
+Req A ---> |                         |
+Data A --> |                         |
+           |                         | ---> Output Valid
+Req B ---> |   2-to-1 Handshake      | ---> Output Data
+Data B --> |   Fixed Priority Arbiter|
+           |                         | <--- Output Ready
+Ready A <- |                         |
+Ready B <- |                         |
+           +-------------------------+
+```
+
 ## Output 
 ### Waveform
 <img width="935" height="303" alt="image" src="https://github.com/user-attachments/assets/4cdbaef8-f10b-4f86-8f2c-b09b854e4873" />
